@@ -8,7 +8,7 @@
   <title>Aijia Zhang | Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <style>
-    /* ====== 全站配色：想换颜色只改下面这一个 #1c3f6e 即可（导航栏主色）====== */
+    /* ====== 全站配色 ====== */
     body {
       background-color: #ffffff;
       color: #1a1a1a;
@@ -18,21 +18,27 @@
     .navbar {
       background-color: #d6e4f2;   /* 浅蓝导航栏 */
     }
+    /* ====== 导航栏文字（调大了）====== */
     .navbar-brand {
-      font-size: x-large;
-      color: #1c3f6e;              /* 名字用深蓝，在浅底上看得清 */
+      font-size: 1.6rem;           /* 左上角名字 */
+      color: #1c3f6e;
     }
     .nav-link {
-      color: #1c3f6e;              /* 导航文字用深蓝 */
+      color: #1c3f6e;              /* 右上角 Research/Teaching/CV/Contact */
+      font-size: 1.15rem;          /* 调大 */
     }
     .profile-picture {
       width: 100%;
       height: auto;
     }
-    /* 正文链接颜色，跟导航栏统一 */
     a { color: #1c3f6e; }
-    /* 让正文不要拉太宽，阅读更舒服 */
     .content-narrow { max-width: 720px; }
+
+    /* ====== 顶部个人信息区字号（整体调大一档）====== */
+    .intro h3 { font-size: 2.3rem; }   /* 名字 Aijia Zhang */
+    .intro h5 { font-size: 1.4rem; }   /* 头衔 / 学校 */
+    .intro h6 { font-size: 1.1rem; }   /* candidate 行 / 邮箱 */
+    .intro p  { font-size: 1.15rem; }  /* 简介段落 */
   </style>
 </head>
 
@@ -70,13 +76,13 @@
             <a href="【你的 Google Scholar 链接】">Google Scholar</a> |
             <a href="【你的 SSRN 链接】">SSRN</a> |
             <a href="【你的 LinkedIn 链接】">LinkedIn</a> |
-            <a href="mailto:AijiaZhang@glasgow.ac.uk">Email</a>
+            <a href="mailto:Aijia.Zhang@glasgow.ac.uk">Email</a>
           </p>
         </div>
       </div>
 
       <!-- ====== 右栏：姓名、头衔、简介 ====== -->
-      <div class="col-md-8 content-narrow">
+      <div class="col-md-8 content-narrow intro">
         <h3>Aijia Zhang</h3>
         <h5>PhD Candidate in Finance</h5>
         <h5>Adam Smith Business School, University of Glasgow</h5>
@@ -91,32 +97,6 @@
         </p>
 
         <h6><a href="input/aijia_zhang_cv.pdf" target="_blank">Full CV (pdf)</a></h6>
-
-        <p><br></p>
-
-        <!-- ====== Job Market Paper ====== -->
-        <h5>Job Market Paper</h5>
-        <p>
-          <strong>
-            <a href="research/zhang_strieborny_fii_ceo_turnover.pdf" target="_blank">Foreign Institutional Investors and Underperforming CEOs: Evidence from Chinese Listed Firms</a>
-          </strong>, with Martin Strieborny.
-          <br>
-          <!-- 下面这段是我替你起草的简短摘要，请核对/替换成你论文的真实摘要 -->
-          <em>
-            This paper studies how foreign institutional investors affect the forced turnover of underperforming CEOs
-            in Chinese listed firms, exploiting the staggered opening of the Stock Connect program as a natural experiment.
-            Distinguishing de jure from de facto foreign ownership, I find that the disciplining effect operates mainly
-            through improved price informativeness rather than direct governance, with the price-informativeness channel
-            dominating in a horse race between the two.
-          </em>
-        </p>
-
-        <p><br></p>
-
-        <!-- ====== News / 近况 ====== -->
-        <h5>News</h5>
-        <h6>Presenting at the Asian Finance Association (AsianFA) 2026 Annual Meeting, Seoul, July 2026.</h6>
-        <!-- 想再加一条就复制上面这一行 <h6>...</h6>，没有就保留一条 -->
 
         <p><br></p>
 
