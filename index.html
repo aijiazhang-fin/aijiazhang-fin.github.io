@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aijia Zhang — PhD Candidate in Finance at the Adam Smith Business School, University of Glasgow. Research in empirical corporate finance and corporate governance.">
+  <title>Aijia Zhang | Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* ====== 全站配色：想换颜色只改下面这一个 #1c3f6e 即可（导航栏主色）====== */
+    body {
+      background-color: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    .navbar {
+      background-color: #1c3f6e;   /* Glasgow 深蓝；可替换成你喜欢的颜色 */
+    }
+    .navbar-brand {
+      font-size: x-large;
+    }
+    .nav-link {
+      color: white;
+    }
+    .profile-picture {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;        /* 让任何比例的照片都裁成漂亮的圆形 */
+      border-radius: 50%;
+    }
+    /* 正文链接颜色，跟导航栏统一 */
+    a { color: #1c3f6e; }
+    /* 让正文不要拉太宽，阅读更舒服 */
+    .content-narrow { max-width: 720px; }
+  </style>
+</head>
+
+<body>
+  <!-- ============ 导航栏（这一整段在每个页面里都一样，改了记得四个页面一起改）============ -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Aijia Zhang</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="input/aijia_zhang_cv.pdf" target="_blank">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ============ 导航栏结束 ============ -->
+
+  <div class="container mt-4">
+    <div class="row">
+
+      <!-- ====== 左栏：照片 + 链接 ====== -->
+      <div class="col-md-4">
+        <img src="input/aijia_zhang_photo.jpg" alt="Aijia Zhang" class="img-fluid profile-picture">
+        <div class="mt-3">
+          <p>
+            <a href="input/aijia_zhang_cv.pdf" target="_blank">CV</a> |
+            <!-- 下面这些链接：有就填上你的真实网址，没有就把那一整行（含前面的 | ）删掉 -->
+            <a href="【你的 Google Scholar 链接】">Google Scholar</a> |
+            <a href="【你的 SSRN 链接】">SSRN</a> |
+            <a href="【你的 LinkedIn 链接】">LinkedIn</a> |
+            <a href="mailto:【你的邮箱】">Email</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- ====== 右栏：姓名、头衔、简介 ====== -->
+      <div class="col-md-8 content-narrow">
+        <h3>Aijia Zhang</h3>
+        <h5>PhD Candidate in Finance</h5>
+        <h5>Adam Smith Business School, University of Glasgow</h5>
+        <h6 class="text-muted">2026&ndash;2027 Job Market Candidate</h6>
+        <h6><a href="mailto:【你的邮箱】">【你的邮箱】</a></h6>
+
+        <p class="mt-3">
+          I am a PhD candidate in Finance at the Adam Smith Business School, University of Glasgow.
+          My research is in empirical corporate finance and corporate governance, with a focus on
+          Chinese capital markets, foreign institutional investors, and the Stock Connect program.
+          I am on the academic job market in 2026&ndash;2027.
+        </p>
+
+        <h6><a href="input/aijia_zhang_cv.pdf" target="_blank">Full CV (pdf)</a></h6>
+
+        <p><br></p>
+
+        <!-- ====== Job Market Paper ====== -->
+        <h5>Job Market Paper</h5>
+        <p>
+          <strong>
+            <a href="research/zhang_strieborny_fii_ceo_turnover.pdf" target="_blank">Foreign Institutional Investors and Underperforming CEOs: Evidence from Chinese Listed Firms</a>
+          </strong>, with Martin Strieborny.
+          <br>
+          <!-- 下面这段是我替你起草的简短摘要，请核对/替换成你论文的真实摘要 -->
+          <em>
+            This paper studies how foreign institutional investors affect the forced turnover of underperforming CEOs
+            in Chinese listed firms, exploiting the staggered opening of the Stock Connect program as a natural experiment.
+            Distinguishing de jure from de facto foreign ownership, I find that the disciplining effect operates mainly
+            through improved price informativeness rather than direct governance, with the price-informativeness channel
+            dominating in a horse race between the two.
+          </em>
+        </p>
+
+        <p><br></p>
+
+        <!-- ====== News / 近况 ====== -->
+        <h5>News</h5>
+        <h6>Presenting at the Asian Finance Association (AsianFA) 2026 Annual Meeting, Seoul, July 2026.</h6>
+        <!-- 想再加一条就复制上面这一行 <h6>...</h6>，没有就保留一条 -->
+
+        <p><br></p>
+
+        <!-- ====== 底部链接 ====== -->
+        <p class="text-center">
+          <a href="research.html">Research</a> |
+          <a href="teaching.html">Teaching</a> |
+          <a href="input/aijia_zhang_cv.pdf" target="_blank">CV</a> |
+          <a href="contact.html">Contact</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
