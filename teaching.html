@@ -18,7 +18,29 @@
     .navbar-brand .cn-name { font-size: 1.3rem; font-weight: normal; }
     .nav-link { color: #1c3f6e; font-size: 1.15rem; }
     a { color: #1c3f6e; }
-    .content-narrow { max-width: 760px; }
+    .content-narrow { max-width: 860px; }
+
+    /* ====== Teaching 页排版 ====== */
+    .page-title {          /* 顶部 Teaching 标题：深蓝 */
+      color: #1c3f6e;
+    }
+    .uni {                 /* University of Glasgow */
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.3rem;
+    }
+    .role {                /* Teaching Assistant 说明 */
+      margin-bottom: 1rem;
+    }
+    .level {               /* Postgraduate level 等小标题 */
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .course-list { list-style-type: square; }
+    .course-list li { margin-bottom: 0.4rem; }
   </style>
 </head>
 <body>
@@ -42,21 +64,20 @@
     </div>
   </nav>
   <!-- ============ 导航栏结束 ============ -->
-  <div class="container mt-5 content-narrow">
-    <h2>Teaching</h2>
 
-    <p>
-      <strong>Graduate Teaching Assistant</strong>, Adam Smith Business School, University of Glasgow (since 2023).
-    </p>
-    <ul>
-      <li>Foundations of International Corporate Finance &mdash; Tutorials</li>
+  <div class="container mt-5 content-narrow">
+    <h2 class="text-center mb-5 page-title">Teaching</h2>
+
+    <p class="uni">University of Glasgow</p>
+    <p class="role">Graduate Teaching Assistant</p>
+
+    <p class="level">Postgraduate level</p>
+    <ul class="course-list">
+      <li>ACCFIN5203 Foundations of International Corporate Finance (2023/2024&ndash;Present)</li>
       <!-- 要再加一门课，就复制上面这一行 <li>...</li> -->
     </ul>
-
-    <p>
-      <strong>Organizer of Internal Seminars for Finance PhD Students</strong>, University of Glasgow (since 2025).
-    </p>
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
