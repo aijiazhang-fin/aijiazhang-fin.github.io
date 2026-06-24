@@ -18,7 +18,31 @@
     .navbar-brand .cn-name { font-size: 1.3rem; font-weight: normal; }
     .nav-link { color: #1c3f6e; font-size: 1.15rem; }
     a { color: #1c3f6e; }
-    .content-narrow { max-width: 760px; }
+
+    /* ====== Research 页排版 ====== */
+    .research-wrap { max-width: 860px; }
+    .section-head {            /* Job Market Paper / Working Papers 小标题 */
+      font-weight: bold;
+      color: #1c3f6e;
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .paper-title {             /* 论文标题 */
+      color: #1c3f6e;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .draft-note {              /* [draft available upon request] */
+      color: #888;
+      font-size: 0.85rem;
+      font-weight: normal;
+    }
+    .abstract {                /* 摘要 */
+      text-align: justify;
+      margin-bottom: 2.5rem;
+    }
+    hr { color: #999; }
   </style>
 </head>
 <body>
@@ -42,39 +66,73 @@
     </div>
   </nav>
   <!-- ============ 导航栏结束 ============ -->
-  <div class="container mt-5 content-narrow">
+
+  <div class="container mt-5 research-wrap">
+    <h2 class="text-center">Research</h2>
+    <hr class="mt-4 mb-5">
+
     <!-- ====== Job Market Paper ====== -->
-    <h2>Job Market Paper</h2>
-    <p>
-      <strong>
-        <a href="research/zhang_strieborny_fii_ceo_turnover.pdf" target="_blank">Foreign Institutional Investors and Underperforming CEOs: Evidence from Chinese Listed Firms</a>
-      </strong>, with Martin Strieborny.
-      <br>
-      <!-- 把下面的摘要替换成你论文的真实摘要（一段话即可）。 -->
-      <em>
-        I study how foreign institutional investors affect the forced turnover of underperforming CEOs in Chinese
-        listed firms, using the staggered opening of the Stock Connect program as a natural experiment. Distinguishing
-        de jure from de facto foreign ownership, I show that the disciplining effect works primarily through improved
-        price informativeness rather than direct governance pressure. In a horse race between the two channels, the
-        price-informativeness channel dominates.
-      </em>
-      <!-- 论文上线后，可在这里加链接，例如：
-      <br>
-      <strong><a href="【SSRN 链接】" target="_blank">SSRN</a></strong> |
-      <strong><a href="research/bibtex/zhang_strieborny_fii_ceo_turnover.txt" target="_blank">BibTeX</a></strong>
-      -->
+    <p class="section-head">Job Market Paper</p>
+
+    <p class="paper-title">
+      Foreign Institutional Investors&rsquo; Site Visits and Tunnelling
+      <span class="draft-note">[draft available upon request]</span>
     </p>
-    <p><br></p>
-    <!-- ====== Work in Progress ====== -->
-    <h2>Work in Progress</h2>
-    <p>
-      <strong>Investor Sentiment on Interactive Platforms and the Behavior of Chinese Listed Firms</strong>.
-      <br>
-      <!-- 下面是占位描述，请替换成你这篇在研论文的真实简介；标题也按你的实际题目改 -->
-      <em>Draft in progress.</em>
+    <p class="abstract">
+      This study investigates whether and how foreign institutional investors&rsquo; (FIIs) site visits
+      affect tunnelling through inter-corporate loans. Using all Chinese firms listed in the Shenzhen
+      Stock Exchange from 2012 to 2022, we find that FIIs&rsquo; site visits significantly curb tunnelling
+      across three different measures of site visits. By performing propensity score matching and
+      multi-period difference-in-difference analysis, we suggest this relation is causal. This effect is
+      more pronounced when FIIs hold larger shareholdings, as their more intensive and frequent visits
+      complement each other in mitigating tunnelling problems. The curbing effect of FIIs&rsquo; site visits
+      on tunnelling is more significant than that of site visits by other institutional investors,
+      including Hong Kong, Macao, and Taiwan (HMT), Sino-foreign, and mainland institutional investors.
+      Finally, we show that FIIs play an effective monitoring role if they visit in groups rather than
+      alone. The study contributes to the literature on tunnelling problems and the disciplining role of
+      FIIs in weak institutional environments.
     </p>
-    <!-- 要再加一篇就复制上面这个 <p>...</p> 段落 -->
+
+    <hr class="mb-5">
+
+    <!-- ====== Working Papers ====== -->
+    <p class="section-head">Working Papers</p>
+
+    <p class="paper-title">
+      Foreign Institutional Investors and Underperforming CEOs: Evidence from Chinese Listed Firms
+      <em>(with <a href="http://www.martinstrieborny.com/" target="_blank">Martin Strieborny</a>)</em>
+      <span class="draft-note">[draft available upon request]</span>
+    </p>
+    <p class="abstract">
+      We examine the potential mechanisms through which foreign institutional investors force out
+      underperforming CEOs. Using a sample of Chinese listed firms from 2009 to 2023, we first show a
+      positive association between foreign institutional shareholdings and CEO turnover-performance
+      sensitivity. We then provide evidence for two transmission channels driving this result &mdash; the
+      quality of corporate governance and the stock price informativeness. To mitigate endogeneity
+      concerns, we conduct a staggered difference-in-differences analysis exploiting the exogenous shock
+      to foreign institutional ownership due to the introduction of the Shanghai/Shenzhen&ndash;Hong Kong
+      Stock Connect Program.
+    </p>
+
+    <p class="paper-title">
+      Do Retail Investors Matter? Investor&ndash;Firm Interactions and Corporate Innovation
+      <span class="draft-note">[draft available upon request]</span>
+    </p>
+    <p class="abstract">
+      This paper examines whether investor&ndash;firm interactions on regulated online platforms affect
+      corporate innovation. Using a sample of 6,115 Chinese A-share listed firms over 2010&ndash;2023, we
+      measure both the volume of investor questions and the incremental information disclosed in
+      managerial responses using a novel directional lexical overlap metric. We find that investor&ndash;firm
+      interactions are positively and significantly associated with subsequent innovation, measured by
+      granted invention patents. The results are robust to entropy balancing and instrumental variable
+      approaches. Further analysis reveals that financial constraints serve as a partial mediating
+      channel, and the effect is stronger when information asymmetry is higher and institutional
+      monitoring is weaker. Our findings suggest that regulated interactive platforms can promote
+      corporate innovation by reducing information asymmetry between retail investors and firm management.
+    </p>
+
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
