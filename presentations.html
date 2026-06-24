@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conference and seminar presentations by Aijia Zhang, PhD Candidate in Finance at the University of Glasgow.">
-  <title>Aijia Zhang | Presentations</title>
+  <meta name="description" content="Conference presentations by Aijia Zhang, PhD Candidate in Finance at the University of Glasgow.">
+  <title>Aijia Zhang | Conferences</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <style>
     body {
@@ -18,7 +18,22 @@
     .navbar-brand .cn-name { font-size: 1.3rem; font-weight: normal; }
     .nav-link { color: #1c3f6e; font-size: 1.15rem; }
     a { color: #1c3f6e; }
-    .content-narrow { max-width: 760px; }
+    .content-narrow { max-width: 860px; }
+
+    /* ====== Conferences 页排版 ====== */
+    .page-title { color: #1c3f6e; }       /* 顶部标题深蓝 */
+    .year {                               /* 年份小标题 */
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
+    .conf-list { list-style-type: square; }
+    .conf-list li {
+      font-size: 1.2rem;                  /* 会议条目字号（调大）*/
+      margin-bottom: 0.7rem;
+    }
+    .conf-note { font-style: italic; }    /* (accepted; not attended) */
   </style>
 </head>
 <body>
@@ -34,7 +49,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-          <li class="nav-item"><a class="nav-link" href="presentations.html">Presentations</a></li>
+          <li class="nav-item"><a class="nav-link" href="presentations.html">Conferences</a></li>
           <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
           <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
         </ul>
@@ -44,21 +59,22 @@
   <!-- ============ 导航栏结束 ============ -->
 
   <div class="container mt-5 content-narrow">
-    <h2>Presentations</h2>
+    <h2 class="text-center mb-5 page-title">Conferences</h2>
 
-    <h4>Conference Presentations</h4>
-    <p>
-      <strong>Foreign Institutional Investors and Underperforming CEOs: Evidence from Chinese Listed Firms</strong><br>
-      Asian Finance Association (AsianFA) Annual Meeting, Seoul, 2026
-      <!-- 想再加一场：在上面这行末尾加 <br>，另起一行写「会议全名, 地点, 年份」 -->
-    </p>
+    <!-- 每个年份一组：<p class="year"> + <ul class="conf-list">。每条会议一行 <li>：会议全名, 地点 -->
+    <p class="year">2026</p>
+    <ul class="conf-list">
+      <li>Asian Finance Association (AsianFA) Annual Meeting, Seoul, South Korea</li>
+      <li>European Financial Management Association (EFMA) Annual Meeting, Kristiansand, Norway <span class="conf-note">(accepted; not attended)</span></li>
+    </ul>
 
-    <h4>Discussant</h4>
-    <p>
-      <!-- 把下面【】换成你讨论的那篇论文标题 -->
-      【被讨论论文的标题】<br>
-      Asian Finance Association (AsianFA) Annual Meeting, Seoul, 2026
-    </p>
+    <p class="year">2025</p>
+    <ul class="conf-list">
+      <li>Financial Management Association (FMA) Annual Meeting, Vancouver, Canada</li>
+      <li>Financial Management Association (FMA) European Conference, Limassol, Cyprus</li>
+      <li>European Financial Management Association (EFMA) Annual Meeting, Athens, Greece</li>
+      <li>Chinese Economic Association (CEA) Annual Conference, Glasgow, UK</li>
+    </ul>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
