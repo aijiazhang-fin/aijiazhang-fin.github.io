@@ -41,8 +41,21 @@
     }
     .abstract {                /* 摘要 */
       text-align: justify;
-      margin-bottom: 2.5rem;
+      margin-bottom: 1rem;
     }
+
+    /* ====== 每篇论文下的会议列表 ====== */
+    .pres-head {               /* "Presented at:" 小标签 */
+      font-weight: bold;
+      margin-bottom: 0.4rem;
+    }
+    .conf-list {
+      list-style-type: square;
+      margin-bottom: 2.5rem;
+      padding-left: 1.4rem;
+    }
+    .conf-list li { margin-bottom: 0.4rem; }
+    .conf-note { font-style: italic; }   /* (accepted; not attended) */
     hr { color: #999; }
   </style>
 </head>
@@ -59,7 +72,6 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link active" href="research.html">Research</a></li>
-          <li class="nav-item"><a class="nav-link" href="presentations.html">Presentations</a></li>
           <li class="nav-item"><a class="nav-link" href="teaching.html">Teaching</a></li>
           <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
         </ul>
@@ -93,6 +105,13 @@
       alone. The study contributes to the literature on tunnelling problems and the disciplining role of
       FIIs in weak institutional environments.
     </p>
+    <p class="pres-head">Presented at:</p>
+    <ul class="conf-list">
+      <li>Financial Management Association (FMA) 2025 Annual Meeting, Vancouver, Canada</li>
+      <li>Financial Management Association (FMA) 2025 European Conference, Limassol, Cyprus</li>
+      <li>European Financial Management Association (EFMA) 2025 Annual Meeting, Athens, Greece</li>
+      <li>Chinese Economic Association (CEA) 2025 Annual Conference, Glasgow, UK</li>
+    </ul>
 
     <hr class="mb-5">
 
@@ -114,6 +133,14 @@
       to foreign institutional ownership due to the introduction of the Shanghai/Shenzhen&ndash;Hong Kong
       Stock Connect Program.
     </p>
+    <p class="pres-head">Presented at:</p>
+    <ul class="conf-list">
+      <li>Financial Management Association (FMA) 2026 Annual Meeting, Tampa, Florida, USA</li>
+      <li>Asian Finance Association (AsianFA) 2026 Annual Meeting, Seoul, South Korea
+        <span class="conf-note">(accepted; not attended)</span></li>
+      <li>European Financial Management Association (EFMA) 2026 Annual Meeting, Kristiansand, Norway
+        <span class="conf-note">(accepted; not attended)</span></li>
+    </ul>
 
     <p class="paper-title">
       Do Retail Investors Matter? Investor&ndash;Firm Interactions and Corporate Innovation
@@ -131,6 +158,10 @@
       monitoring is weaker. Our findings suggest that regulated interactive platforms can promote
       corporate innovation by reducing information asymmetry between retail investors and firm management.
     </p>
+    <p class="pres-head">Presented at:</p>
+    <ul class="conf-list">
+      <li>Financial Management Association (FMA) 2026 Annual Meeting, Tampa, Florida, USA</li>
+    </ul>
 
   </div>
 
